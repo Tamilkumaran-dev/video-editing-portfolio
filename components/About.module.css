@@ -1,0 +1,197 @@
+.about {
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(245,166,35,0.3), transparent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+/* Image Column */
+.imageCol {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.6s ease;
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.03);
+}
+
+.imageGlow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 60%, rgba(8,8,13,0.95));
+  z-index: 1;
+}
+
+/* Floating badge */
+.floatingBadge {
+  position: absolute;
+  bottom: 24px;
+  left: -20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: rgba(12, 12, 20, 0.9);
+  border: 1px solid rgba(245, 166, 35, 0.25);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(16px);
+  z-index: 2;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floatingBadgeIcon {
+  font-size: 1.6rem;
+}
+
+.floatingBadgeTitle {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.floatingBadgeSub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Experience badge */
+.expBadge {
+  position: absolute;
+  top: 24px;
+  right: -16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #f5a623, #ffc95c);
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.4);
+}
+
+.expNumber {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #0a0a0a;
+  line-height: 1;
+}
+
+.expLabel {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: rgba(10,10,10,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Content Column */
+.contentCol {
+  padding-top: 8px;
+}
+
+.bio {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills {
+  margin: 36px 0;
+}
+
+.skillsTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skillItem {}
+
+.skillHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.skillIcon {
+  font-size: 0.9rem;
+}
+
+.skillName {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.skillPercent {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.skillBar {
+  height: 5px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skillFill {
+  height: 100%;
+  background: linear-gradient(to right, #f5a623, #ffc95c);
+  border-radius: 3px;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
