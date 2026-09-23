@@ -59,7 +59,7 @@ export default function About() {
               </div>
               {/* Experience badge */}
               <div className={styles.expBadge}>
-                <span className={styles.expNumber}>2</span>
+                <span className={styles.expNumber}>4</span>
                 <span className={styles.expLabel}>Clients</span>
               </div>
             </div>

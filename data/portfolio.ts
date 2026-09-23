@@ -71,6 +71,30 @@ export const portfolioProjects: VideoProject[] = [
     year: 2024,
     client: 'YouTube Creator',
   },
+  {
+    id: 'prj-05',
+    title: 'Gamemart — Gaming & Accessories Reel',
+    category: 'Reels',
+    description:
+      'Dynamic short-form video edit for @gamemart_ featuring high-energy beat sync, product overlays, and vibrant visual effects.',
+    thumbnail: '/images/thumbnail_gamemart.png',
+    driveLink: 'https://drive.google.com/file/d/1Rha44H1V-_20FqwTMe4bUxAHHqef5Ktb/view?usp=drive_link',
+    duration: '0:35',
+    year: 2024,
+    client: '@gamemart_',
+  },
+  {
+    id: 'prj-06',
+    title: 'Speedmart Chennai — Commercial Showcase',
+    category: 'Commercial',
+    description:
+      'Promotional commercial edit for @speedmartchennai with cinematic color grading, smooth text motion graphics, and fast pacing.',
+    thumbnail: '/images/thumbnail_speedmart.png',
+    driveLink: 'https://drive.google.com/file/d/14qE2B09pJ89afbj6FILOm4lJ577CV2Ke/view?usp=drive_link',
+    duration: '0:40',
+    year: 2024,
+    client: '@speedmartchennai',
+  },
 ];
 
 export const testimonials = [
@@ -89,6 +113,22 @@ export const testimonials = [
     text: 'Working with Tamilkumaran has elevated our social media presence. The beat-synced edits and clean transitions really make our content stand out.',
     rating: 5,
     avatar: 'TP',
+  },
+  {
+    id: 'test-03',
+    name: 'Gamemart',
+    role: 'Gaming Store & Retailer',
+    text: 'The promo reel Tamilkumaran crafted for gamemart_ was top tier. The fast cuts, sound effects, and motion captions boosted our campaign engagement immensely!',
+    rating: 5,
+    avatar: 'GM',
+  },
+  {
+    id: 'test-04',
+    name: 'Speedmart Chennai',
+    role: 'Supermarket & Retail',
+    text: 'Tamilkumaran delivered a fantastic commercial for Speedmart Chennai. Professional color grading, sharp audio editing, and quick delivery!',
+    rating: 5,
+    avatar: 'SC',
   },
 ];
 
@@ -134,5 +174,40 @@ export const services = [
     title: 'Brand Commercials',
     description: 'Full production editing for brand films and commercials — from 15-second ads to 3-minute brand stories.',
     tools: ['Premiere Pro', 'After Effects'],
+  },
+];
+
+export const instagramClients = [
+  {
+    id: 'client-1',
+    username: 'speedmartchennai',
+    name: 'Speedmart',
+    category: 'Automotive / Retail',
+    followers: '4.6K+',
+    link: 'https://www.instagram.com/speedmartchennai/',
+  },
+  {
+    id: 'client-2',
+    username: 'gamemart_',
+    name: 'Gamemart',
+    category: 'Video Game Store',
+    followers: '60K+',
+    link: 'https://www.instagram.com/gamemart_/',
+  },
+  {
+    id: 'client-3',
+    username: 'travelpanlama',
+    name: 'Travel Panlama',
+    category: 'Travel Company',
+    followers: '70+',
+    link: 'https://www.instagram.com/travelpanlama/',
+  },
+  {
+    id: 'client-4',
+    username: 'yanatrips.in',
+    name: 'Yana Trips',
+    category: 'Digital Creator',
+    followers: '180+',
+    link: 'https://www.instagram.com/yanatrips.in/',
   },
 ];
