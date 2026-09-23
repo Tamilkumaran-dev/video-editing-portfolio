@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 import styles from './About.module.css';
 
 const tools = [
-  { name: 'CapCut', icon: '✂️', level: 90 },
+  { name: 'CapCut PC', icon: '✂️', level: 90 },
   { name: 'Premiere Pro', icon: '🎬', level: 10 },
   { name: 'After Effects', icon: '✨', level: 10 },
 ];
@@ -77,7 +77,7 @@ export default function About() {
               I have delivered over 90 successful projects.
             </p>
             <p className={styles.bio}>
-              My primary tool is CapCut, allowing me to craft fast-paced, engaging content efficiently. I also utilize Premiere Pro and After Effects for advanced cuts, effects, and color grading to ensure every frame counts.
+              My primary tool is CapCut PC, allowing me to craft fast-paced, engaging content efficiently. I also utilize Premiere Pro and After Effects for advanced cuts, effects, and color grading to ensure every frame counts.
             </p>
 
             {/* Skills */}

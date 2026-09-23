@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: [
     'freelance video editor',
     'video editing',
-    'capcut editor',
+    'capcut PC editor',
     'premiere pro',
     'social media reels',
   ],

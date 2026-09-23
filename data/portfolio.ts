@@ -166,7 +166,7 @@ export const services = [
     icon: '📱',
     title: 'Social Media Reels',
     description: 'Fast, engaging short-form content optimized for Instagram, TikTok, and YouTube Shorts with trending formats.',
-    tools: ['Premiere Pro', 'CapCut'],
+    tools: ['Premiere Pro', 'CapCut PC'],
   },
   {
     id: 'svc-06',

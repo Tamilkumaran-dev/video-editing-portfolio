@@ -28,7 +28,7 @@ export default function Contact() {
 
   const socials = [
     { icon: '📧', label: 'Email', value: 'tamilkumaranofficial07@gmail.com', href: 'mailto:tamilkumaranofficial07@gmail.com' },
-    { icon: '📱', label: 'Phone', value: '+91 9025990187', href: 'tel:+919025990187' },
+    { icon: '📱', label: 'Phone', value: '+91 75501 98531', href: 'tel:+917550198531' },
   ];
 
   return (
